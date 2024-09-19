@@ -1,17 +1,52 @@
-import { SlideShowProps } from '@/types/types';
+'use client';
 import Image from 'next/image';
-export default function ImageSlideShow({ images }: SlideShowProps) {
-  const imageLoop = images.map((image, index) => (
-    <Image
-      key={index}
-      src={image}
-      alt={`Image ${index + 1}`}
-      className={`absolute inset-0 w-full h-full object-cover opacity-0 animate-slideshow${
-        index >= 1 && '-' + index * 3000
-      }`}
-      width={300}
-      height={300}
-    />
-  ));
-  return <div className="relative h-[300px] w-[300px]">{imageLoop}</div>;
+import { useState } from 'react';
+
+export default function ImageSlideShow({ images }: { images: string[] }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const goToPrevious = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
+  };
+
+  return (
+    <div className="relative md:w-[700px] md:h-[500px] overflow-hidden">
+      <button
+        onClick={goToPrevious}
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-1 rounded z-10"
+      >
+        &lt;
+      </button>
+      <button
+        onClick={goToNext}
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-1 rounded z-10"
+      >
+        &gt;
+      </button>
+
+      <div className="relative w-full h-full">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-500 ${
+              index === currentIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <Image
+              src={image}
+              alt={`Image ${index + 1}`}
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }

@@ -4,3 +4,9 @@ export type ParamsCatchAll = {
   };
 };
 export type SlideShowProps = { images: string[] };
+export type Project = {
+  title: string;
+  description: string;
+  images: string[];
+  link: string;
+};

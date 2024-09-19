@@ -15,7 +15,7 @@ export enum HomeLayoutStyles {
 }
 
 export enum ProjectLayoutStyles {
-  Container = 'flex flex-col md:flex-row border border-black min-h-[65vh]',
+  Container = ' border border-black min-h-[65vh]',
 }
 
 export enum ButtonStyles {
