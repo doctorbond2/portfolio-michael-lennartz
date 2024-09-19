@@ -1,27 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer components {
+  .linkActive {
+    @apply text-gray-500 border-b-2 border-gray-500;
+  }
+  .underlineAnimation {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .underlineAnimation::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+  }
+
+  .underlineAnimation:hover::after {
+    width: 100%;
+  }
+}
+@keyframes slideshow {
+  0%,
+  33.333% {
+    opacity: 1;
+  }
+  66.666%,
+  100% {
+    opacity: 0;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-slideshow {
+  animation: slideshow 9s infinite ease-in-out;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.delay-3000 {
+  animation-delay: 3s;
+}
+
+.delay-6000 {
+  animation-delay: 6s;
 }
