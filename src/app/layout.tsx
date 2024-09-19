@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-gray-800">
-        <div className="min-h-[90vh] md:rounded-[25px] md:m-12 border border-black bg-white">
+        <div className="min-h-[90vh] md:rounded-[25px] md:m-12 bg-white">
           <header>
             <HeaderLayout />
           </header>

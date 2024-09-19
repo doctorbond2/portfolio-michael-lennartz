@@ -16,7 +16,7 @@ export default function ImageSlideShow({ images }: { images: string[] }) {
   };
 
   return (
-    <div className="relative md:w-[700px] md:h-[500px] overflow-hidden">
+    <div className="relative md:w-[750px] md:h-[500px] overflow-hidden rounded-lg md:mr-36 md:mt-[5%] ">
       <button
         onClick={goToPrevious}
         className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-1 rounded z-10"
@@ -42,7 +42,7 @@ export default function ImageSlideShow({ images }: { images: string[] }) {
               src={image}
               alt={`Image ${index + 1}`}
               layout="fill"
-              objectFit="cover"
+              objectFit=" cover"
             />
           </div>
         ))}

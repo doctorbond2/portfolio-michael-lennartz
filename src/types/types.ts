@@ -6,7 +6,10 @@ export type ParamsCatchAll = {
 export type SlideShowProps = { images: string[] };
 export type Project = {
   title: string;
+  full_title: string;
   description: string;
   images: string[];
   link: string;
+  technologies: string[];
+  deploy: string;
 };

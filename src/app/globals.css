@@ -33,15 +33,15 @@
   0%,
   20% {
     opacity: 0;
-  } /* Hidden at the start */
+  }
   20.1%,
   70% {
     opacity: 1;
-  } /* Visible in the middle */
+  }
   70.1%,
   100% {
     opacity: 0;
-  } /* Hidden at the end */
+  }
 }
 
 .animate-slideshow {

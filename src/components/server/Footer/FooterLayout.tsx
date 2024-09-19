@@ -8,7 +8,7 @@ export default function FooterLayout() {
         className="flex md:flex-wrap w-full justify-between"
       >
         <FooterLinks />
-        <p>© 2024 - ML Portfolio</p>
+        <p className="text-gray-400">© 2024 - ML Portfolio</p>
       </nav>
     </div>
   );

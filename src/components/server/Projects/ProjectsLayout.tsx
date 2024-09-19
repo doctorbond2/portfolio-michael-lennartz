@@ -5,7 +5,7 @@ import ProjectsHeader from './ProjectsHeader';
 import { Project } from '@/types/types';
 import ProjectShowCase from './ProjectShowcase';
 import { useState } from 'react';
-import Link from 'next/link';
+// import Link from 'next/link';
 export default function ProjectsLayout() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const handleSelection = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -20,7 +20,7 @@ export default function ProjectsLayout() {
     <div className={STYLING.Container}>
       <ProjectsHeader {...{ handleSelection }} />
 
-      <ul>
+      {/* <ul>
         <Link
           href="https://hakims-livs-2304-g06x-client.vercel.app/"
           target="blank"
@@ -36,7 +36,7 @@ export default function ProjectsLayout() {
         >
           <li>Ecommerce</li>
         </Link>
-      </ul>
+      </ul> */}
       {/* className={STYLING.SelectedProject} */}
       {selectedProject ? (
         <div>
