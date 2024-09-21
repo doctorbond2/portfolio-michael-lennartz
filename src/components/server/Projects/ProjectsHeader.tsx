@@ -1,18 +1,36 @@
 'use client';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 type Props = {
   handleSelection: (e: React.MouseEvent<HTMLButtonElement>) => void;
 };
 import { myProjects } from '@/types/models';
 export default function ProjectsHeader({ handleSelection }: Props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const handleClickOutside = (e: MouseEvent) => {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(e.target as Node)
+    ) {
+      setIsMenuOpen(false);
+    }
+  };
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
   return (
-    <div className="md:w-[10%] border border-black relative">
-      <button onClick={toggleMenu} className="mx-5 font-nanum">
+    <div
+      className="md:w-[15%] md:ml-auto z-20 relative border-b-2 border-black rounded-sm"
+      ref={dropdownRef}
+    >
+      <button onClick={toggleMenu} className=" font-bold">
         Select Project
       </button>
       <div
@@ -27,8 +45,11 @@ export default function ProjectsHeader({ handleSelection }: Props) {
             <button
               key={index}
               value={project.title}
-              onClick={handleSelection}
-              className="mx-5 font-nanum"
+              onClick={(e) => {
+                handleSelection(e);
+                toggleMenu();
+              }}
+              className="mx-5 font-nanum font-bold"
             >
               {project.title}
             </button>

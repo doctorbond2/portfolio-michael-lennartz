@@ -34,7 +34,7 @@ export default function ProjectInfo({
           <h5 className="text-gray-700 text-xl italic mr-1">
             View the project now on
           </h5>
-          <div className="w-[40px] h-[40px]">
+          <div className="xl:w-[40px] xl:h-[40px]">
             <Image
               width={40}
               height={40}

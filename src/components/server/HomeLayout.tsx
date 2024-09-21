@@ -4,20 +4,23 @@ import ProfileInfo from './ProfileInfo';
 export default function HomeLayout() {
   return (
     <>
-      <div id="home-wrapper" className={STYLING.Container}>
-        <section
-          id="left-section-presentation"
-          className={STYLING.ProfileInfoSection}
-        >
-          <ProfileInfo />
-        </section>
-        <section
-          id="right-section-image"
-          className={STYLING.ProfilePictureSection}
-        >
-          <ProfileImage />
-        </section>
-      </div>
+      {
+        <div id="home-wrapper" className={STYLING.Container}>
+          <section
+            id="left-section-presentation"
+            className={STYLING.ProfileInfoSection}
+          >
+            <ProfileInfo />
+          </section>
+
+          <section
+            id="right-section-image"
+            className={STYLING.ProfilePictureSection}
+          >
+            <ProfileImage />
+          </section>
+        </div>
+      }
     </>
   );
 }

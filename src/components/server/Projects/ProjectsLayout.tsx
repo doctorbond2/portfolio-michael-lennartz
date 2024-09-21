@@ -1,6 +1,7 @@
 'use client';
 import { ProjectLayoutStyles as STYLING } from '@/types/enum';
 import { myProjects } from '@/types/models';
+import ProjectsWelcome from './ProjectsWelcome';
 import ProjectsHeader from './ProjectsHeader';
 import { Project } from '@/types/types';
 import ProjectShowCase from './ProjectShowcase';
@@ -19,31 +20,10 @@ export default function ProjectsLayout() {
   return (
     <div className={STYLING.Container}>
       <ProjectsHeader {...{ handleSelection }} />
-
-      {/* <ul>
-        <Link
-          href="https://hakims-livs-2304-g06x-client.vercel.app/"
-          target="blank"
-        >
-          <li>Online Food Store</li>
-        </Link>
-        <Link href="/projects/2">
-          <li>Chat app</li>
-        </Link>
-        <Link
-          href="https://ecommerce-headless-cms-storyblok-nextjs.vercel.app/"
-          target="blank"
-        >
-          <li>Ecommerce</li>
-        </Link>
-      </ul> */}
-      {/* className={STYLING.SelectedProject} */}
       {selectedProject ? (
-        <div>
-          <ProjectShowCase project={selectedProject} />
-        </div>
+        <ProjectShowCase project={selectedProject} />
       ) : (
-        <h2>Select a project!</h2>
+        <ProjectsWelcome />
       )}
     </div>
   );
