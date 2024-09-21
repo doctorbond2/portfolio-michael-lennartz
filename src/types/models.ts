@@ -5,7 +5,7 @@ export const myProjects: Project[] = [
     full_title: 'Ecommerce with Headless CMS',
     description:
       'Using Storyblok API to manage content and Next.js to render the pages. Images taken from fantastic clothing store Colourful Standard.',
-    images: ['/ecom1.png', '/ecom2.png', '/ecom3.png'],
+    images: ['/ecom3.png', '/ecom2.png', '/ecom1.png'],
     link: 'https://ecommerce-headless-cms-storyblok-nextjs.vercel.app/',
     technologies: ['Next.js', 'Storyblok', 'Tailwind CSS'],
     deploy: 'Vercel',

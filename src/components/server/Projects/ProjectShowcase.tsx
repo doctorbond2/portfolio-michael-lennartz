@@ -6,13 +6,13 @@ export default function ProjectShowCase({ project }: { project: Project }) {
     project;
   return (
     <>
-      <div id="project-showcase-container" className="flex md:flex-row ">
-        <section id="left-section-info md:w-[50%] md:max-w[50%]">
+      <div id="project-showcase-container" className="flex md:flex-row w-full">
+        <section id="left-section-info" className="md:w-1/2 flex-1">
           <ProjectInfo
             {...{ full_title, description, technologies, deploy, link }}
           />
         </section>
-        <section id="right-section-image md:w-[50%]">
+        <section id="right-section-image" className="md:w-[50%] md:max-w-[50%]">
           <ImageSlideShow images={images} />
         </section>
       </div>

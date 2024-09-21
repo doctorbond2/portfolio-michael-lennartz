@@ -6,7 +6,7 @@ export enum HeaderStyles {
   ul = 'flex flex-row justify-around md:space-x-36 md: list-none',
 }
 export enum FooterStyles {
-  Container = 'w-full border-black flex md:flex-wrap md:px-8 h-24',
+  Container = 'w-full border-black flex md:flex-wrap md:px-8 h-[10vh] justify-between items-center',
 }
 export enum HomeLayoutStyles {
   Container = 'flex flex-col md:flex-row  min-h-[65vh] justify-center items-center',

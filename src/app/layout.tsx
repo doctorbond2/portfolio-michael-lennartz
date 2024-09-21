@@ -28,7 +28,7 @@ export default function RootLayout({
         </div>
         <div className="hidden md:block w-full">
           <OptionsProvider>
-            <div className="min-h-[90vh] md:rounded-[25px] md:m-12 bg-white">
+            <div className="min-h-[90vh] max-h-[90vh] md:rounded-[25px] md:m-12 bg-white">
               <header>
                 <HeaderLayout />
               </header>

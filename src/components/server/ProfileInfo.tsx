@@ -1,10 +1,10 @@
 export default function ProfileInfo() {
   return (
     <div>
-      <h1 className="font-nanum text-[4rem] font-bold max-w-[80%]">
+      <h1 className="font-nanum xl:text-[4rem] lg:text-[2rem] font-bold ">
         Michael Lennartz
       </h1>
-      <h2 className="font-nanum text-[1.8rem] text-gray-400 max-w-[80%]">
+      <h2 className="font-nanum xl:text-[1.8rem] lg:text-[1rem] text-gray-400 max-w-[80%]">
         Fullstack Developer
       </h2>
       <br></br>
