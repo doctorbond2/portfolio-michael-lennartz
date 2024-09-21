@@ -2,7 +2,7 @@ export enum HeaderStyles {
   Container = 'flex w-full justify-between items-center md:px-8 h-24',
   Logo = '',
   Nav = 'flex flex-row list-none',
-  NavItem = 'space-x-8',
+  NavItem = 'space-x-[10vw]',
   ul = 'flex flex-row justify-around md:space-x-36 md: list-none',
 }
 export enum FooterStyles {

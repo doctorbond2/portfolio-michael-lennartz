@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function FooterLinks() {
   return (
     <>
-      <div className="flex justify-around w-[30%] items-center">
+      <div className="flex space-x-8 w-[30%] items-center">
         <div id="github-image-wrapper">
           <Link href="https://github.com/doctorbond2" target="blank">
             <Image
