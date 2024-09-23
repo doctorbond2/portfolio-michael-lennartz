@@ -8,9 +8,9 @@ export default function ProjectShowCase({ project }: { project: Project }) {
     <>
       <div
         id="project-showcase-container"
-        className="flex md:flex-row w-full animate-fadeIn"
+        className="flex md:flex-row w-full animate-fadeIn min-h-[80%] md:min-h-[90%] "
       >
-        <section id="left-section-info" className="md:w-1/2 flex-1 ">
+        <section id="left-section-info" className="md:w-1/2 flex-1 min-h-[80%]">
           <ProjectInfo
             {...{ full_title, description, technologies, deploy, link }}
           />

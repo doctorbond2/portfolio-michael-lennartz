@@ -15,7 +15,7 @@ export default function ProjectInfo({
 }) {
   return (
     <>
-      <div className=" xl:mx-20 xl:mt-20 md:mt-3 md:mx-3">
+      <div className="xl:mx-20 xl:mt-[5%] md:mt-3 md:mx-3">
         <h2 className="font-nanum xl:text-[2rem] md:text-[1.6rem] font-bold max-w-[80%]">
           {full_title}
         </h2>

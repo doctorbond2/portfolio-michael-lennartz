@@ -29,7 +29,7 @@ export const myProjects: Project[] = [
     ],
     deploy: 'Vercel',
     id: 2,
-    short_description: 'With Storyblok and NEXT.js',
+    short_description: 'MongoDB/Express & React',
     preview_image: '/hakim-preview.png',
   },
   {
@@ -49,7 +49,7 @@ export const myProjects: Project[] = [
     ],
     deploy: 'Render',
     id: 3,
-    short_description: 'With Storyblok and Next.js',
+    short_description: 'MongoDB/Express & React',
     preview_image: '/chat1.png',
   },
   {
@@ -65,14 +65,19 @@ export const myProjects: Project[] = [
     short_description: 'Smaller project with Vue',
     preview_image: '/vue1.png',
   },
-  // {
-  //   title: 'Online Game Review Site',
-  //   full_title: 'Online Game Review Platform',
-  //   description: 'Work in progress: Fullstack web application for gaming enthusiasts to rate and view modern video games on all major gaming systems.',
-  //   technologies: ['Next.js', 'Python', 'Python-Flask', 'SQLite', 'MaterialUI'],
-  //   deploy: null,
-  //   short_description: 'Fullstack web application for game reviews',
-  // }
+  {
+    title: 'Game Review Site',
+    full_title: 'Online Game Review Platform',
+    description:
+      'Work in progress: Fullstack web application for gaming enthusiasts to rate and view modern video games on all major gaming systems.',
+    technologies: ['Next.js', 'Python', 'Python-Flask', 'SQLite', 'MaterialUI'],
+    deploy: 'Github',
+    short_description: 'With Python and Next.js',
+    images: ['/comingsoon.jpg'],
+    preview_image: '/comingsoon.jpg',
+    link: 'https://github.com/doctorbond2/game-review-site',
+    id: 5,
+  },
 ];
 export const myProjectsSV: Project[] = [
   {
