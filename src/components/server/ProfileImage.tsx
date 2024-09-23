@@ -20,8 +20,8 @@ const ProfileImage = () => {
             style={{
               width: '100%',
               height: '100%',
-              transform: 'scale(1.2)', // Adjust the scale value as needed
-              transformOrigin: 'center top', // Adjust the origin to keep the face centered
+              transform: 'scale(1.3)',
+              transformOrigin: 'center 10%',
             }}
           >
             <Image
