@@ -34,7 +34,7 @@ export default function ContactLayout() {
           Visit My GitHub
         </a>
         <a
-          href="/CV_ENG_2.pdf"
+          href="/CV_ENG_0001.pdf"
           download="Michael_Lennartz_CV.pdf"
           className={STYLING.ContactButton}
         >
