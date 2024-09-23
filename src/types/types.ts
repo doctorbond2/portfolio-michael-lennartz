@@ -11,5 +11,8 @@ export type Project = {
   images: string[];
   link: string;
   technologies: string[];
-  deploy: string;
+  deploy: string | null;
+  id: number;
+  short_description: string;
+  preview_image?: string;
 };

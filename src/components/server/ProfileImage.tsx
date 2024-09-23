@@ -16,12 +16,21 @@ const ProfileImage = () => {
             overflow: 'hidden',
           }}
         >
-          <Image
-            src="/placeholder.jpg"
-            alt="Profile Picture"
-            layout="fill"
-            objectFit="contain"
-          />
+          <div
+            style={{
+              width: '100%',
+              height: '100%',
+              transform: 'scale(1.2)', // Adjust the scale value as needed
+              transformOrigin: 'center top', // Adjust the origin to keep the face centered
+            }}
+          >
+            <Image
+              src="/image0.jpg"
+              alt="Profile Picture"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
         </div>
       ) : (
         <h3>Loading</h3>

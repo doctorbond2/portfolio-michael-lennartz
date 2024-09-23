@@ -10,7 +10,7 @@ export default function ProjectInfo({
   description: string;
   technologies: string[];
   full_title: string;
-  deploy: string;
+  deploy: string | null;
   link: string;
 }) {
   return (
@@ -30,24 +30,26 @@ export default function ProjectInfo({
           ))}
         </div>
         <br />
-        <div className="flex items-center">
-          <h5 className="text-gray-700 text-xl italic mr-1">
-            View the project now on
-          </h5>
-          <div className="xl:w-[40px] xl:h-[40px]">
-            <Image
-              width={40}
-              height={40}
-              src="/rightarrow.png"
-              alt={'rightarrow'}
-            />
-          </div>
-          <Link href={link} target="blank">
-            <h5 className="text-gray-800 text-xl italic hover:text-blue-800">
-              {deploy}
+        {deploy ? (
+          <div className="flex items-center">
+            <h5 className="text-gray-700 text-xl italic mr-1">
+              View the project now on
             </h5>
-          </Link>
-        </div>
+            <div className="xl:w-[40px] xl:h-[40px]">
+              <Image
+                width={40}
+                height={40}
+                src="/rightarrow.png"
+                alt={'rightarrow'}
+              />
+            </div>
+            <Link href={link} target="blank">
+              <h5 className="text-gray-800 text-xl italic hover:text-blue-800">
+                {deploy}
+              </h5>
+            </Link>
+          </div>
+        ) : null}
       </div>
     </>
   );

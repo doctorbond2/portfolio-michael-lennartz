@@ -9,18 +9,18 @@ export enum FooterStyles {
   Container = 'w-full border-black flex md:flex-wrap md:px-8 h-[10vh] justify-between items-center',
 }
 export enum HomeLayoutStyles {
-  Container = 'flex flex-col md:flex-row  min-h-[65vh] justify-center items-center',
+  Container = 'flex flex-col md:flex-row  min-h-[65vh] justify-center items-center animate-fadeIn',
   ProfileInfoSection = 'flex flex-col justify-center items-center md:ml-8 max-w-[40%] min-w-[30%]',
   ProfilePictureSection = 'flex flex-col justify-center items-center ',
 }
 export enum ContactLayoutStyles {
-  Container = 'flex flex-col items-center justify-center  min-h-[65vh] bg-gradient-to-b p-8 text-black',
+  Container = 'flex flex-col items-center justify-center  min-h-[65vh] bg-gradient-to-b p-8 text-black  animate-fadeIn',
   ContactInfoSection = 'flex flex-col items-center justify-center h- bg-gradient-to-b p-8 text-black border-t',
   ContactButton = 'block w-full text-center border border-black py-3 px-6 bg-white font-semibold rounded-lg shadow-lg transition-all hover:bg-slate-200',
 }
 
 export enum ProjectLayoutStyles {
-  Container = 'min-h-[65vh]',
+  Container = 'md:min-h-[65vh] md:h-[65vh] animate-fadeIn',
 }
 
 export enum ButtonStyles {

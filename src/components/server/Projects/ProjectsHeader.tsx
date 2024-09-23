@@ -41,6 +41,15 @@ export default function ProjectsHeader({ handleSelection }: Props) {
         }`}
       >
         <div className="flex flex-col mt-2">
+          <button
+            onClick={(e) => {
+              handleSelection(e);
+              toggleMenu();
+            }}
+            value={''}
+          >
+            All projects
+          </button>
           {myProjects.map((project, index) => (
             <button
               key={index}
