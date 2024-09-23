@@ -36,8 +36,8 @@ export const myProjects: Project[] = [
     title: 'Chat App',
     full_title: 'Chat application',
     description:
-      'A fullstack project and my first try at using Socket.IO to work with instant chat messaging. This project is still a work in progress and more updating are coming!',
-    images: ['/hakim1.png', '/hakim2.png', '/hakim3.png', '/hakim4.png'],
+      'A fullstack project and my first try at using Socket.IO to work with instant chat messaging. This project is still a work in progress and more updates are coming!',
+    images: ['/chat1.png', '/chat2.png'],
     link: 'https://chattupp-client.onrender.com/',
     technologies: [
       'React/Vite',
@@ -50,20 +50,20 @@ export const myProjects: Project[] = [
     deploy: 'Render',
     id: 3,
     short_description: 'With Storyblok and Next.js',
-    preview_image: '/ecom-preview.png',
+    preview_image: '/chat1.png',
   },
   {
     title: 'User list',
     full_title: 'User list from API',
     description:
-      'This is just a smaller frontend showcase from when I tried to work with Vue instead of Vite.',
+      'This is just a smaller frontend showcase from when I tried to work with Vue instead of React.',
     images: ['/vue1.png', '/vue2.png'],
     link: 'https://user-list-project.vercel.app/',
     technologies: ['Vue/Vite', 'Tailwind CSS'],
     deploy: 'Vercel',
     id: 4,
     short_description: 'Smaller project with Vue',
-    preview_image: '/ecom-preview.png',
+    preview_image: '/vue1.png',
   },
   // {
   //   title: 'Online Game Review Site',

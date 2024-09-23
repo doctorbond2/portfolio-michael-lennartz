@@ -6,7 +6,6 @@ import ProjectsHeader from './ProjectsHeader';
 import { Project } from '@/types/types';
 import ProjectShowCase from './ProjectShowcase';
 import { useEffect, useState } from 'react';
-// import Link from 'next/link';
 export default function ProjectsLayout() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 

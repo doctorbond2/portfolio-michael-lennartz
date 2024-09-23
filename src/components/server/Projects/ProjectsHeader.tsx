@@ -27,26 +27,27 @@ export default function ProjectsHeader({ handleSelection }: Props) {
   }, []);
   return (
     <div
-      className="md:w-[15%] md:ml-auto z-20 relative border-b-2 border-black rounded-sm"
+      className="md:w-[15%] md:ml-[5%] md:mr-auto z-20 relative rounded-sm"
       ref={dropdownRef}
     >
       <button onClick={toggleMenu} className=" font-bold">
         Select Project
       </button>
       <div
-        className={`absolute left-0 right-0 mt-2 bg-white border border-black transition-all duration-500 ease-in-out ${
+        className={`absolute left-0 right-0 mt-2 bg-white border border-black transition-all duration-500 ease-in-out rounded-sm ${
           isMenuOpen
             ? 'opacity-100 max-h-96'
             : 'opacity-0 max-h-0 pointer-events-none'
         }`}
       >
-        <div className="flex flex-col mt-2">
+        <div className="flex flex-col mt-2 font-nanum font-bold">
           <button
             onClick={(e) => {
               handleSelection(e);
               toggleMenu();
             }}
             value={''}
+            className="border-b-2 border-transparent hover:border-black mx-[30%]"
           >
             All projects
           </button>
@@ -58,12 +59,11 @@ export default function ProjectsHeader({ handleSelection }: Props) {
                 handleSelection(e);
                 toggleMenu();
               }}
-              className="mx-5 font-nanum font-bold"
+              className="w-fit border-b-2 border-transparent hover:border-black mx-auto"
             >
               {project.title}
             </button>
           ))}
-          <button className="mx-5 font-nanum">Another project</button>
         </div>
       </div>
     </div>
