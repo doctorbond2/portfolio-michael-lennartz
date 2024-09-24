@@ -13,7 +13,7 @@ export default function ProjectPreviewBox({
     <>
       <div
         key={'project-' + id}
-        className={`min-h-[70%] h-[80%] w-[30%] min-w-[30%] mx-[1%] flex flex-col items-center justify-between opacity-0 text-center text-lg font-semibold animate-fadeIn 
+        className={`min-h-[70%] h-[80%] w-[30%] min-w-[30%] mx-[2%] flex flex-col items-center justify-between opacity-0 text-center text-lg font-semibold animate-fadeIn 
             hover:-translate-y-2 transform transition-transform duration-500 ease-in-out hover:shadow-xl hover:scale-110 cursor-pointer hover:border-2 border-gray-400 rounded-lg group`}
         style={{ animationDelay: `${(id - 1) * 0.2}s` }}
         onClick={() => {

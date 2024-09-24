@@ -24,6 +24,7 @@ export default function HeaderLayout({}: Props) {
           />
           <div className="absolute right-10 transform translate-x-[-10px] top-1/2 -translate-y-1/2 hidden group-hover:block bg-gray-700 text-white text-md rounded-md py-1 px-2 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
             Settings option coming soon!
+            <br /> This Portfolio is a work in progress {':)'}
           </div>
         </div>
       </section>

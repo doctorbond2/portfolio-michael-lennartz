@@ -21,7 +21,7 @@ export default function ProjectInfo({
         </h2>
         <br></br>
         <p>{description}</p>
-        <div className="mt-20">
+        <div className="mt-[2%] overflow-y-auto">
           <h3 className="text-gray-700 text-xl">Build with:</h3>
           {technologies.map((tech_title, index) => (
             <h4 key={'tech-' + index} className="italic">
@@ -33,7 +33,9 @@ export default function ProjectInfo({
         {deploy ? (
           <div className="flex items-center">
             <h5 className="text-gray-700 text-xl italic mr-1">
-              View the project now on
+              {deploy === 'Github'
+                ? 'View repository'
+                : 'View the project now on'}
             </h5>
             <div className="xl:w-[40px] xl:h-[40px]">
               <Image

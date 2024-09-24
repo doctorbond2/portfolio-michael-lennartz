@@ -20,7 +20,7 @@ export enum ContactLayoutStyles {
 }
 
 export enum ProjectLayoutStyles {
-  Container = 'md:min-h-[65vh] md:h-[65vh] animate-fadeIn',
+  Container = 'md:min-h-[65vh] md:h-[65vh] animate-fadeIn overflow-auto',
 }
 
 export enum ButtonStyles {

@@ -27,7 +27,7 @@ export default function ProjectsHeader({ handleSelection }: Props) {
   }, []);
   return (
     <div
-      className="md:w-[15%] md:ml-[5%] md:mr-auto z-20 relative"
+      className="md:w-[18%] md:ml-[5%] md:mr-auto z-20 relative"
       ref={dropdownRef}
     >
       <button
@@ -50,7 +50,7 @@ export default function ProjectsHeader({ handleSelection }: Props) {
               toggleMenu();
             }}
             value={''}
-            className="mx-[30%] my-1 underlineAnimation"
+            className="mx-auto my-1 underlineAnimation"
           >
             All projects
           </button>
