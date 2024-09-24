@@ -2,9 +2,14 @@
 import Link from 'next/link';
 import { HeaderStyles as HS } from '@/types/enum';
 import { usePathname } from 'next/navigation';
+import { useOptions } from '@/context/OptionsContext';
 export default function HeaderLinks() {
   const currentUrl = usePathname();
-  console.log(currentUrl);
+  const { state } = useOptions();
+  const homeLinkTitle = state.language === 'sv' ? 'Hem' : 'Home';
+  const projectsLinkTitle = state.language === 'sv' ? 'Projekt' : 'Projects';
+  const contactLinkTitle = state.language === 'sv' ? 'Kontakt' : 'Contact';
+
   return (
     <nav>
       <ul className={HS.ul}>
@@ -17,7 +22,7 @@ export default function HeaderLinks() {
               (currentUrl === '/' ? 'linkActive' : 'underlineAnimation')
             }
           >
-            Home
+            {homeLinkTitle}
           </li>
           <div className=""></div>
         </Link>
@@ -30,7 +35,7 @@ export default function HeaderLinks() {
               (currentUrl === '/projects' ? 'linkActive' : 'underlineAnimation')
             }
           >
-            Projects
+            {projectsLinkTitle}
           </li>
         </Link>
         <Link href="/contact">
@@ -42,7 +47,7 @@ export default function HeaderLinks() {
               (currentUrl === '/contact' ? 'linkActive' : 'underlineAnimation')
             }
           >
-            Contact
+            {contactLinkTitle}
           </li>
         </Link>
       </ul>

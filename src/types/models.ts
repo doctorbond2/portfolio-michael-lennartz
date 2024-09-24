@@ -4,13 +4,13 @@ export const myProjects: Project[] = [
     title: 'Headless CMS',
     full_title: 'Ecommerce with Headless CMS',
     description:
-      'Using Storyblok API to manage content and Next.js to render the pages. Images taken from fantastic clothing store Colourful Standard.',
+      'Using Storyblok API to manage content using their bloks structure and Next.js to render the pages. Images taken from online clothing store Colourful Standard.',
     images: ['/ecom3.png', '/ecom2.png', '/ecom1.png'],
     link: 'https://ecommerce-headless-cms-storyblok-nextjs.vercel.app/',
     technologies: ['Next.js', 'Storyblok', 'Tailwind CSS'],
     deploy: 'Vercel',
     id: 1,
-    short_description: 'With Storyblok and NEXT.js',
+    short_description: 'Storyblok and NEXT.js',
     preview_image: '/ecom-preview.png',
   },
   {
@@ -72,7 +72,7 @@ export const myProjects: Project[] = [
       'Work in progress: Fullstack web application for gaming enthusiasts to rate and view modern video games on all major gaming systems.',
     technologies: ['Next.js', 'Python', 'Python-Flask', 'SQLite', 'MaterialUI'],
     deploy: 'Github',
-    short_description: 'With Python and Next.js',
+    short_description: 'Python and Next.js',
     images: ['/comingsoon.jpg'],
     preview_image: '/comingsoon.jpg',
     link: 'https://github.com/doctorbond2/game-review-site',
@@ -84,20 +84,20 @@ export const myProjectsSV: Project[] = [
     title: 'Headless CMS',
     full_title: 'E-handel med Headless CMS',
     description:
-      'Använder Storyblok API för att hantera innehåll och Next.js för att rendera sidorna. Bilder hämtade från den fantastiska klädbutiken Colourful Standard.',
+      'Använder Storyblok API och deras blok-struktur för att hantera innehåll och Next.js för att rendera sidorna. Bilderna är tagna från klädbutiken Colourful Standard.',
     images: ['/ecom3.png', '/ecom2.png', '/ecom1.png'],
     link: 'https://ecommerce-headless-cms-storyblok-nextjs.vercel.app/',
     technologies: ['Next.js', 'Storyblok', 'Tailwind CSS'],
     deploy: 'Vercel',
     id: 1,
-    short_description: 'Med Storyblok och NEXT.js',
+    short_description: 'Storyblok och NEXT.js',
     preview_image: '/ecom-preview.png',
   },
   {
     title: 'Online Livsmedelsbutik',
-    full_title: 'E-handel för livsmedelsprodukter',
+    full_title: 'Online Livsmedelsbutik',
     description:
-      'Nätbutik med en fungerande databas kopplad till frontend. Webbplatsen inkluderar även en fullt fungerande egenbyggd adminpanel för att hantera produkter och beställningar.',
+      'Online butik med en fungerande databas kopplad till frontend. Sidan inkluderar också en helt fungerande specialdesignad administrationspanel för att arbeta med produkter och beställningar.',
     images: ['/hakim1.png', '/hakim2.png', '/hakim3.png', '/hakim4.png'],
     link: 'https://hakims-livs-2304-g06x-client.vercel.app/',
     technologies: [
@@ -109,15 +109,15 @@ export const myProjectsSV: Project[] = [
     ],
     deploy: 'Vercel',
     id: 2,
-    short_description: 'Med Storyblok och NEXT.js',
+    short_description: 'MongoDB/Express & React',
     preview_image: '/hakim-preview.png',
   },
   {
-    title: 'Chatt App',
-    full_title: 'Chatt applikation',
+    title: 'Chat App',
+    full_title: 'Chattapplikation',
     description:
-      'Ett fullstack-projekt och mitt första försök att använda Socket.IO för att arbeta med direktmeddelanden. Detta projekt är fortfarande under utveckling och fler uppdateringar kommer!',
-    images: ['/hakim1.png', '/hakim2.png', '/hakim3.png', '/hakim4.png'],
+      'Ett fullstackprojekt och mitt första försök att använda Socket.IO för att arbeta med direktmeddelanden. Detta projekt är fortfarande under utveckling och fler uppdateringar kommer!',
+    images: ['/chat1.png', '/chat2.png'],
     link: 'https://chattupp-client.onrender.com/',
     technologies: [
       'React/Vite',
@@ -129,28 +129,48 @@ export const myProjectsSV: Project[] = [
     ],
     deploy: 'Render',
     id: 3,
-    short_description: 'Med Storyblok och Next.js',
-    preview_image: '/ecom-preview.png',
+    short_description: 'MongoDB/Express & React',
+    preview_image: '/chat1.png',
   },
   {
-    title: 'Användarlista',
-    full_title: 'Användarlista från API',
+    title: 'User List',
+    full_title: 'User List med API',
     description:
-      'Detta är bara ett mindre frontend-projekt från när jag testade att arbeta med Vue istället för Vite.',
+      'Detta är bara en mindre frontend-visning från när jag försökte arbeta med Vue istället för React.',
     images: ['/vue1.png', '/vue2.png'],
     link: 'https://user-list-project.vercel.app/',
     technologies: ['Vue/Vite', 'Tailwind CSS'],
     deploy: 'Vercel',
     id: 4,
     short_description: 'Mindre projekt med Vue',
-    preview_image: '/ecom-preview.png',
+    preview_image: '/vue1.png',
   },
-  // {
-  //   title: 'Online Spelrecensionssida',
-  //   full_title: 'Plattform för Spelrecensioner Online',
-  //   description: 'Pågående arbete: Fullstack webbapplikation för spelentusiaster att betygsätta och se moderna videospel på alla stora spelsystem.',
-  //   technologies: ['Next.js', 'Python', 'Python-Flask', 'SQLite', 'MaterialUI'],
-  //   deploy: null,
-  //   short_description: 'Fullstack webbapplikation för spelrecensioner',
-  // }
+  {
+    title: 'Spelrecensionssajt',
+    full_title: 'Online plattform med spelrecensioner',
+    description:
+      'Under utveckling: Fullstack-webbapplikation för spelentusiaster att betygsätta och visa moderna videospel på alla större spelsystem.',
+    technologies: ['Next.js', 'Python', 'Python-Flask', 'SQLite', 'MaterialUI'],
+    deploy: 'Github',
+    short_description: 'Python och Next.js',
+    images: ['/comingsoon.jpg'],
+    preview_image: '/comingsoon.jpg',
+    link: 'https://github.com/doctorbond2/game-review-site',
+    id: 5,
+  },
 ];
+
+export const introductionENG = `Passionate web developing student with a strong interest in the latest
+web technologies. I have experience in building web applications using
+React, Next.js, Tailwind CSS and more. I am also familiar with backend
+technologies such as Node.js, Express, and MongoDB. I enjoy both styling
+a pretty frontend as well as the intricates of complex backend coding.`;
+
+export const introductionSV = `Passionerad webbutvecklingsstudent 
+med ett starkt intresse för de senaste webbutvecklingsteknikerna. 
+Jag har erfarenhet av att bygga webbapplikationer med hjälp av React,
+ Next.js, Tailwind CSS och mer. Jag är också bekant med backend-teknologier 
+ som Node.js, Express och MongoDB. 
+ Jag tycker om både att styla en snygg
+ frontend samt att studera de mer komplexa 
+ aspekterna av backendkodning`;
