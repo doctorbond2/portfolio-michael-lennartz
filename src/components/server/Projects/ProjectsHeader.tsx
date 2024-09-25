@@ -37,7 +37,7 @@ export default function ProjectsHeader({ handleSelection }: Props) {
         onClick={toggleMenu}
         className="font-bold w-fit  border border-black text-white bg-black rounded-md p-1 hover:bg-white hover:text-black"
       >
-        Projects Menu
+        {state.language === 'en' ? 'Projects Menu' : 'Projektmeny'}
       </button>
       <div
         className={`absolute left-0 right-0 mt-2 bg-white border-2 border-black transition-all duration-500 ease-in-out rounded-md ${
@@ -55,7 +55,7 @@ export default function ProjectsHeader({ handleSelection }: Props) {
             value={''}
             className="mx-auto my-1 underlineAnimation"
           >
-            All projects
+            {state.language === 'en' ? 'All projects' : 'Alla projekt'}
           </button>
           {projects.map((project, index) => (
             <button
