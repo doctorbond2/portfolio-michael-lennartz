@@ -43,7 +43,9 @@ export default function ProjectInfo({
                       ? 'View Github Repo'
                       : 'Se Github Repo'
                   }`
-                : `${state.language === 'en' ? 'Deployed on' : 'Deployad på'}`}
+                : `${
+                    state.language === 'en' ? 'Deployed on' : 'Se projektet nu'
+                  }`}
             </h5>
             <div className="xl:w-[40px] xl:h-[40px]">
               <Image

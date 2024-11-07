@@ -28,9 +28,7 @@ export default function ProjectsLayout() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.language]);
-  useEffect(() => {
-    console.log('selected project: ', selectedProject);
-  }, [selectedProject]);
+
   return (
     <div className={STYLING.Container}>
       <ProjectsHeader {...{ handleSelection }} />

@@ -19,15 +19,12 @@ export default function HeaderLayout() {
   };
 
   const toggleMenu = () => {
-    console.log('Menu toggled');
     setIsMenuOpen(!isMenuOpen);
-    console.log(isMenuOpen);
   };
 
   const handleSelection = (e: React.MouseEvent<HTMLButtonElement>) => {
     const selectedOption =
       e.currentTarget.value === 'sv' ? Language.sv : Language.en;
-    console.log('Selected option:', selectedOption);
     dispatch({ type: 'SET_LANGUAGE', payload: selectedOption });
     setIsMenuOpen(false);
   };
