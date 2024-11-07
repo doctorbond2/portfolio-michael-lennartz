@@ -9,7 +9,7 @@ export default function ContactLayout() {
         Frontend/Backend/Fullstack Developer.`,
   };
   const TEXT_SV = {
-    h1: 'Ser fram emot att ta kontakt!',
+    h1: 'Kontakta mig!',
     p: 'Söker för tillfället tjänst eller praktik som Frontend/Backend/Fullstack-utvecklare. ',
   };
   const TEXT = state.language === 'sv' ? TEXT_SV : TEXT_ENG;
