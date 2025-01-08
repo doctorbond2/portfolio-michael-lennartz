@@ -162,14 +162,14 @@ export const myProjectsSV: Project[] = [
 
 export const introductionENG = `Passionate web developing student with a strong interest in the latest
 web technologies. I have experience in building web applications using
-React, Next.js, Tailwind CSS and more. I am also familiar with backend
+React, Next.js, Angular, Tailwind CSS and more. I am also familiar with backend
 technologies such as Node.js, Express, and MongoDB. I enjoy both styling
 a pretty frontend as well as the intricates of complex backend coding.`;
 
 export const introductionSV = `Passionerad webbutvecklingsstudent 
 med ett starkt intresse för de senaste webbutvecklingsteknikerna. 
 Jag har erfarenhet av att bygga webbapplikationer med hjälp av React,
- Next.js, Tailwind CSS och mer. Jag är också bekant med backend-teknologier 
+ Next.js, Angular Tailwind CSS och mer. Jag är också bekant med backend-teknologier 
  som Node.js, Express och MongoDB. 
  Jag tycker om både att styla en snygg
  frontend samt att studera de mer komplexa 

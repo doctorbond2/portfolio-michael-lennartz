@@ -40,11 +40,12 @@ export default function ProjectsHeader({ handleSelection }: Props) {
         {state.language === 'en' ? 'Projects Menu' : 'Projektmeny'}
       </button>
       <div
-        className={`absolute left-0 right-0 mt-2 bg-white border-2 border-black transition-all duration-500 ease-in-out rounded-md ${
-          isMenuOpen
-            ? 'opacity-100 max-h-[20rem] pointer-events-auto'
-            : 'opacity-0 max-h-0 pointer-events-none'
-        }`}
+        className={`absolute left-0 right-0 mt-2 bg-white border-2 border-black transition-all duration-500 ease-in-out rounded-md 
+          ${
+            isMenuOpen
+              ? 'opacity-100 max-h-[20rem] pointer-events-auto'
+              : 'opacity-0 max-h-0 pointer-events-none'
+          }`}
       >
         <div className="flex flex-col mt-2 font-nanum font-bold text-lg">
           <button
