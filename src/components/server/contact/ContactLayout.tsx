@@ -13,7 +13,7 @@ export default function ContactLayout() {
     modal_text: 'Choose language:',
   };
   const TEXT_SV = {
-    h1: 'Ser fram emot att ta kontakt!',
+    h1: 'Kontakta mig!',
     p: 'Söker för tillfället tjänst eller praktik som Frontend/Backend/Fullstack-utvecklare. ',
     modal_close: 'Stäng',
     modal_text: 'Välj språk:',

@@ -13,7 +13,7 @@ export default function ProjectsWelcome({ handleSelection }: Props) {
     state.language === 'sv' ? 'Mina nuvarande projekt' : 'My current projects';
   const welcomeText =
     state.language === 'sv'
-      ? 'Här kan du hitta alla projekt jag har producerat och försöka förbättra så mycket som tiden tillåter!'
+      ? 'Här kan du hitta alla projekt jag har producerat och försöker förbättra så mycket som tiden tillåter!'
       : 'Here you can find all the projects I have produced and try to improve as much as time allows!';
   return (
     <div className="flex flex-col items-center min-h-[60%] h-[90%]">
